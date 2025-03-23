@@ -14,4 +14,16 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
+  module: {
+    rules: [
+        {
+            test: /\.js$/,
+            type: 'javascript/auto',
+          },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
