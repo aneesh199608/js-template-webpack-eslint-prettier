@@ -2,9 +2,7 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 module.exports = {
-
   entry: {
     app: './src/index.js',
   },
@@ -18,7 +16,6 @@ module.exports = {
       title: 'Production',
       template: './src/index.html',
     }),
-
   ],
 
   module: {
@@ -41,7 +38,4 @@ module.exports = {
       },
     ],
   },
-
-  
-
 };
